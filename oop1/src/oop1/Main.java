@@ -35,11 +35,11 @@ public class Main {
 		System.out.println("</ul>");
 		
 		
-		IndividualCustomer IndividualCustomer = new IndividualCustomer ();
-		IndividualCustomer.setPhone("05552225566");
-		IndividualCustomer.setCustomerNumber("12345");
-		IndividualCustomer.setFirstname("Umut");
-		IndividualCustomer.setLastname("ŞAHİN");
+		IndividualCustomer individualCustomer = new IndividualCustomer ();
+		individualCustomer.setPhone("05552225566");
+		individualCustomer.setCustomerNumber("12345");
+		individualCustomer.setFirstname("Umut");
+		individualCustomer.setLastname("ŞAHİN");
 		
 		CorporateCustomer corporateCustomer =new CorporateCustomer();
 		corporateCustomer.setId(2);
@@ -48,6 +48,7 @@ public class Main {
 		corporateCustomer.setTaxNumber("111111111");
 		corporateCustomer.setCustomerNumber("54321");
 		
+		Customer[] customers = {individualCustomer,corporateCustomer};		
 
 	}
 
